@@ -1,5 +1,8 @@
+#atualizado por Aldenir Faria dia 26/11/2020
+
 from GUI import *
 import Backend as core
+
 
 app = None
 
