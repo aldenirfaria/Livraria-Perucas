@@ -1,6 +1,5 @@
 from GUI import *
 import Backend as core
-import select as something
 
 app = None
 
@@ -25,32 +24,32 @@ def getSelectedRow(event):
     global selected
     index = app.listLivros.curselection()[0]
     selected = app.listLivros.get(index)
-    app.entNome.delete(0, END)
     app.entNome.insert(END, selected[1])
-    app.entAutor.delete(0, END)
+    app.entNome.delete(0, END)
     app.entAutor.insert(END, selected[2])
-    app.entEditora.delete(0, END)
+    app.entAutor.delete(0, END)
     app.entEditora.insert(END, selected[3])
-    app.entVolume.delete(0, END)
+    app.entEditora.delete(0, END)
     app.entVolume.insert(END, selected[4])
-    app.entAnolanc.delete(0, END)
+    app.entVolume.delete(0, END)
     app.entAnolanc.insert(END, selected[5])
-    app.entLocal.delete(0, END)
+    app.entAnolanc.delete(0, END)
     app.entLocal.insert(END, selected[6])
-    app.entFornecedor.delete(0, END)
+    app.entLocal.delete(0, END)
     app.entFornecedor.insert(END, selected[7])
-    app.entDataEntrada.delete(0, END)
+    app.entFornecedor.delete(0, END)
     app.entDataEntrada.insert(END, selected[8])
-    app.entEstoqueMin.delete(0, END)
+    app.entDataEntrada.delete(0, END)
     app.entEstoqueMin.insert(END, selected[9])
-    app.entEstoqueMax.delete(0, END)
+    app.entEstoqueMin.delete(0, END)
     app.entEstoqueMax.insert(END, selected[10])
-    app.entEstoqueAtual.delete(0, END)
+    app.entEstoqueMax.delete(0, END)
     app.entEstoqueAtual.insert(END, selected[11])
-    app.entPrecoCompra.delete(0, END)
+    app.entEstoqueAtual.delete(0, END)
     app.entPrecoCompra.insert(END, selected[12])
-    app.entPrecoVenda.delete(0, END)
+    app.entPrecoCompra.delete(0, END)
     app.entPrecoVenda.insert(END, selected[13])
+    app.entPrecoVenda.delete(0, END)
     return selected
 
 

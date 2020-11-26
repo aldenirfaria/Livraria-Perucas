@@ -10,7 +10,6 @@ class Gui():
 
     # Criando variáveis que armazenarão o texto inserido pelo usuário...
 
-    txtCodigo = StringVar()
     txtNome = StringVar()
     txtAutor = StringVar()
     txtEditora = StringVar()
@@ -27,7 +26,6 @@ class Gui():
 
     # Criando os objetos que estarão na janela...
 
-    lblcodigo = Label(window, text="Código")
     lblnome = Label(window, text="Nome")
     lblautor = Label(window, text="Autor")
     lbleditora = Label(window, text="Editora")
@@ -41,7 +39,6 @@ class Gui():
     lblestoqueatual = Label(window, text="Estoque atual")
     lblprecocompra = Label(window, text="Preço de compra")
     lblprecovenda = Label(window, text="Preço de Venda")
-    entCodigo = Entry(window, textvariable=txtCodigo)
     entNome = Entry(window, textvariable=txtNome)
     entAutor = Entry(window, textvariable=txtAutor)
     entEditora = Entry(window, textvariable=txtEditora)
@@ -63,7 +60,6 @@ class Gui():
     btnClose = Button(window, text="Fechar")
 
     # Associando os objetos a grid da janela...
-    lblcodigo.grid(row=0, column=0)
     lblnome.grid(row=1, column=0)
     lblautor.grid(row=2, column=0)
     lbleditora.grid(row=3, column=0)
@@ -77,8 +73,7 @@ class Gui():
     lblestoqueatual.grid(row=11, column=0)
     lblprecocompra.grid(row=12, column=0)
     lblprecovenda.grid(row=13, column=0)
-    entCodigo.grid(row=0, column=1, padx=50, pady=50)
-    entNome.grid(row=1, column=1)
+    entNome.grid(row=1, column=1, padx=50, pady=50)
     entAutor.grid(row=2, column=1)
     entEditora.grid(row=3, column=1)
     entVolume.grid(row=4, column=1)
@@ -91,8 +86,8 @@ class Gui():
     entEstoqueAtual.grid(row=11, column=1)
     entPrecoCompra.grid(row=12, column=1)
     entPrecoVenda.grid(row=13, column=1)
-    listLivros.grid(row=0, column=2, rowspan=20)
-    scrollLivros.grid(row=0, column=6, rowspan=20)
+    listLivros.grid(row=0, column=2, rowspan=14, ipadx = 400)
+    scrollLivros.grid(row=0, column=6, rowspan=14)
     btnViewAll.grid(row=14, column=0, columnspan=2)
     btnInserir.grid(row=15, column=0, columnspan=2)
     btnDel.grid(row=16, column=0, columnspan=2)
@@ -103,9 +98,9 @@ class Gui():
 
     scrollLivros.configure(command=listLivros.yview)
 
-    x_pad = 3
+    x_pad = 5
     y_pad = 3
-    width_entry = 20
+    width_entry = 30
 
     # Adicionando um pouco de SWAG a interface...
     for child in window.winfo_children():
