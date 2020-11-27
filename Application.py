@@ -1,5 +1,6 @@
 #Desenvolvido pelo time Aldenir Faria, Gabriel e Kleber
-#atualizado por Aldenir Faria dia 26/11/2020
+#atualizado por Aldenir Faria dia 27/11/2020
+#obrigado professor!!!!
 
 from GUI import *
 import Backend as core
