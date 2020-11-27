@@ -1,3 +1,4 @@
+#Desenvolvido pelo time Aldenir Faria, Gabriel e Kleber
 import sqlite3 as sql
 
 class TransactionObject():

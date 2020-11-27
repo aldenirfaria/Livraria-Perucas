@@ -1,3 +1,4 @@
+#Desenvolvido pelo time Aldenir Faria, Gabriel e Kleber
 #atualizado por Aldenir Faria dia 26/11/2020
 
 from GUI import *

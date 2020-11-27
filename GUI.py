@@ -1,3 +1,5 @@
+#Desenvolvido pelo time Aldenir Faria, Gabriel e Kleber
+
 from tkinter import *
 
 class Gui():
